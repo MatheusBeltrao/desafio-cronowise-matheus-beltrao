@@ -1,0 +1,22 @@
+def ordem_processamento(solicitacoes):
+    def prioridade(s):
+        if s["tipo"] == "URGENTE":
+            return (0, s["timestamp"])
+        else:
+            return (1, s["timestamp"])
+
+    ordenadas = sorted(solicitacoes, key=prioridade)
+
+    ids = []
+    for s in ordenadas:
+        ids.append(s["id"])
+    return ids
+
+if __name__ == "__main__":
+    entrada = [
+        {"id": 1, "tipo": "NORMAL",  "timestamp": 10},
+        {"id": 2, "tipo": "URGENTE", "timestamp": 20},
+        {"id": 3, "tipo": "NORMAL",  "timestamp": 15},
+        {"id": 4, "tipo": "URGENTE", "timestamp": 5},
+    ]
+    print(ordem_processamento(entrada))
