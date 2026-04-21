@@ -1,0 +1,4 @@
+Se eu precisasse buscar um CPF em uma lista de 1 milhão de registros, escolheria a opção (b), o set.
+A única situação em que eu usaria uma lista seria se fosse necessário manter a ordem dos registros.
+Para busca, o set é mais eficiente, pois utiliza uma estrutura de tabela hash, permitindo encontrar o CPF em tempo constante na maioria dos casos, sem precisar percorrer todos os elementos.
+
