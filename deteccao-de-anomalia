@@ -1,0 +1,17 @@
+def verificar_alertas(tempos):
+    alertas = []
+    consecutivas = 0
+
+    for i in range(len(tempos)):
+        if tempos[i] > 2000:
+            consecutivas += 1
+            if consecutivas == 3:
+                alertas.append(i)
+        else:
+            consecutivas = 0
+
+    return alertas
+
+
+tempos = [500, 700, 2100, 2300, 2400, 2100, 2800, 2200]
+print(verificar_alertas(tempos))
