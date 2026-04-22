@@ -1,0 +1,3 @@
+O problema é o time.sleep() dentro da função recursiva.
+
+Poderia trocar por um loop para evitar quebrar o código, ficar mais seguro e simples. 
