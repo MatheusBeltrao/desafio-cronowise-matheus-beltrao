@@ -1,0 +1,5 @@
+A) Irá aparecer apenas o texto "carregando" pois a requisição não finalizou 
+
+B) Irá atualizar na tela pois o useEffect vai rodar e com isso faz uma nova requisição para o tenat
+
+C)  Não consegui identificar o problema.
