@@ -1,0 +1,4 @@
+1 - Salva o horário que começou
+2 - Antes de cada tentativa verifica se ainda tem tempo
+3 - Antes de esperar verifica se a espera cabe dentro dos 30s
+4 - Se não couber, desiste e retorna timeout
